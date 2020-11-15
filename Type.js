@@ -14,7 +14,7 @@ const decideTypeColor = (type) => {
     case "ice":
       return "#96D9D6"
     case "fighting":
-      return "C22E28"
+      return "#C22E28"
     case "poison":
       return "#A33EA1"
     case "ground":

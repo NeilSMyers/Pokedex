@@ -35,7 +35,7 @@ const PokemonCard = ({ name, url }) => {
             {name[0].toUpperCase()}
             {name.slice(1)}
           </Text>
-          <Text style={styles.id}>#{data?.id}</Text>
+          <Text style={styles.order}>#{data?.order}</Text>
         </View>
         <View>{renderTypes()}</View>
       </View>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 20,
   },
-  id: {
+  order: {
     color: "#34b1eb",
     marginTop: 5,
   },

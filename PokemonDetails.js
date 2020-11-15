@@ -12,8 +12,7 @@ const PokemonDetails = ({ navigation, route }) => {
       .then((res) => res.json())
       .then((data) => data)
   )
-
-  console.log(data)
+  console.log(pokemon)
 
   React.useEffect(() => {
     navigation.setOptions({
