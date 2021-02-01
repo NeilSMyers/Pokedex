@@ -38,7 +38,9 @@ const PokemonDetails = ({ navigation, route }) => {
         />
       </View>
       <View>{renderTypes()}</View>
-      <Text>{data?.flavor_text_entries[0].flavor_text}</Text>
+      <Text style={styles.flavorText}>
+        {data?.flavor_text_entries[22].flavor_text}
+      </Text>
     </View>
   )
 }
@@ -55,6 +57,10 @@ const styles = StyleSheet.create({
   sprite: {
     height: 150,
     width: 150,
+  },
+  flavorText: {
+    fontSize: 16,
+    margin: 20,
   },
 })
 
